@@ -1,2 +1,3 @@
 # dragonfire
-🐲Helper classes for managing Electron applications.
+
+> 🐲 Helper classes for managing Electron applications.

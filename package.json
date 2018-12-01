@@ -1,0 +1,43 @@
+{
+  "name": "dragonfire",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Helper classes for managing Electron applications.",
+  "author": {
+    "name": "Jack R. Scott",
+    "email": "jack.rob.scott@gmail.com"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "mocha -r ts-node/register src/**/*.test.ts",
+    "prepublishOnly": "yarn run build",
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rm -rf lib",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  },
+  "keywords": [
+    "typescript",
+    "electron",
+    "desktop"
+  ]
+}
