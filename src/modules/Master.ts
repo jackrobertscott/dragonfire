@@ -2,6 +2,6 @@ import Orb from './Orb';
 
 export default class Master {
   public createOrb() {
-    return new Orb();
+    return new Orb({ blah: true });
   }
 }
